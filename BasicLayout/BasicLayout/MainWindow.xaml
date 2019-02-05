@@ -1,0 +1,112 @@
+﻿<Window x:Class="BasicLayout.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BasicLayout"
+        mc:Ignorable="d"
+        Loaded="Windows_Loaded"
+        Title="Basic Layout" Height="800" Width="400">
+    <Border Padding="10">
+        <StackPanel>
+            <!--Buttons-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Margin="0 0 10 0" Click="ApplyButton_Click">Apply</Button>
+                <!--<Button x:Name="ApplyButton" Click="ApplyButton_Click" Margin="0 0 10 0" Grid.Column="0" Content="Apply" />-->
+                <Button Grid.Column="1" Margin="0 0 10 0" Click="ResetButton_Click">Reset</Button>
+                <Button Grid.Column="2">Refresh</Button>
+            </Grid>
+
+            <TextBlock FontWeight="Bold" Margin="0 10" Text="Pulse Properties"/> 
+            <!--Description-->
+            <TextBlock Text="Description"/>
+            <TextBox x:Name="DescriptionText" Padding="2"/>
+            <!--Status & Revision-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <!--Status-->
+                <StackPanel Grid.Column="0" Margin="0 0 10 0">
+                    <TextBlock Text="Status"/>
+                    <TextBox IsReadOnly="True" Padding="2" Background="#eee"/>
+                </StackPanel>
+                <!--Revision-->
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="Revision"/>
+                    <TextBox IsReadOnly="True" Padding="2" Background="#eee"/>
+                </StackPanel>
+            </Grid>
+            <!--Part Number-->
+            <TextBlock Text="Part Number"/>
+            <TextBox IsReadOnly="True" Padding="2" Background="#eee"/>
+            <!--Row Material-->
+            <TextBlock FontWeight="Bold" Margin="0 10" Text="Row Material"/>
+            <!--Material-->
+            <TextBlock Text="Material"/>
+            <ComboBox Padding="2"/>
+            <!--Manufacturing Info-->
+            <TextBlock FontWeight="Bold" Margin="0 10" Text="Manufacturing Info"/>
+            <!--Work Centres-->
+            <TextBlock Text="Work Centres" Margin="0 0 0 10"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <!-- Column 1 -->
+                <StackPanel Grid.Column="0" Margin="0 0 10 0">
+                    <CheckBox Checked="Checkbox_Checked" x:Name="WeldCheckbox">Weld</CheckBox>
+                    <CheckBox Checked="Checkbox_Checked" x:Name="AssemblyCheckbox">Assembly</CheckBox>
+                    <CheckBox Checked="Checkbox_Checked" x:Name="PlasmaCheckbox">Plasma</CheckBox>
+                    <CheckBox Checked="Checkbox_Checked" x:Name="LaserCheckbox">Laser</CheckBox>
+                    <CheckBox Checked="Checkbox_Checked" x:Name="PurchaseCheckbox">Purchase</CheckBox>
+                </StackPanel>
+                <!-- Column 2 -->
+                <StackPanel Grid.Column="1">
+                    <CheckBox Checked="Checkbox_Checked" x:Name="LatheCheckbox">Lathe</CheckBox>
+                    <CheckBox Checked="Checkbox_Checked" x:Name="DrillCheckbox" >Drill</CheckBox>
+                    <CheckBox Checked="Checkbox_Checked" x:Name="FoldCheckbox">Fold</CheckBox>
+                    <CheckBox Checked="Checkbox_Checked" x:Name="RollCheckbox">Roll</CheckBox>
+                    <CheckBox Checked="Checkbox_Checked" x:Name="SawCheckbox">Saw</CheckBox>
+                </StackPanel>
+            </Grid>
+            <!--Length-->
+            <TextBlock Text="Length"/>
+            <TextBox Padding="2" x:Name="LengthText"/>
+            <!--Mass-->
+            <TextBlock Text="Mass"/>
+            <TextBox IsReadOnly="True" Background="#eee"  Padding="2" x:Name="MassText"/>
+            <!--Finish-->
+            <TextBlock Text="Finish"/>
+            <ComboBox Padding="2" x:Name="FinishDropDown" SelectionChanged="FinishDropDown_SelectionChanged" SelectedIndex="0">
+                <ComboBoxItem>Painted</ComboBoxItem>
+                <ComboBoxItem>Not Painted</ComboBoxItem>
+            </ComboBox>
+            <!--Purchase Information-->
+            <TextBlock Text="Purchase Information"/>
+            <ComboBox Padding="2" SelectedIndex="0">
+                <ComboBoxItem>Rubber</ComboBoxItem>
+                <ComboBoxItem>Not Rubber</ComboBoxItem>
+            </ComboBox>
+            <!--Supplier Name-->
+            <TextBlock Text="Supplier Name"/>
+            <TextBox Padding="2" x:Name="SupplierNameText" TextChanged="SupplierNameText_TextChanged"/>
+            <!--Supplier Code-->
+            <TextBlock Text="Supplier Code"/>
+            <TextBox Padding="2" />
+            <!--Additional Info-->
+            <TextBlock FontWeight="Bold" Margin="0 10" Text="Additional Info"/>
+            <!--Note-->
+            <TextBlock Text="Note"/>
+            <TextBox Padding="2" x:Name="NoteText"/>
+        </StackPanel> 
+    </Border>
+</Window>

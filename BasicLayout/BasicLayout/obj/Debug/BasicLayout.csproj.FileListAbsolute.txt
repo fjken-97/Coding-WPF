@@ -1,0 +1,15 @@
+C:\Users\诀别泪\source\repos\BasicLayout\BasicLayout\bin\Debug\BasicLayout.exe.config
+C:\Users\诀别泪\source\repos\BasicLayout\BasicLayout\bin\Debug\BasicLayout.exe
+C:\Users\诀别泪\source\repos\BasicLayout\BasicLayout\bin\Debug\BasicLayout.pdb
+C:\Users\诀别泪\source\repos\BasicLayout\BasicLayout\obj\Debug\BasicLayout.csprojAssemblyReference.cache
+C:\Users\诀别泪\source\repos\BasicLayout\BasicLayout\obj\Debug\MainWindow.g.cs
+C:\Users\诀别泪\source\repos\BasicLayout\BasicLayout\obj\Debug\App.g.cs
+C:\Users\诀别泪\source\repos\BasicLayout\BasicLayout\obj\Debug\BasicLayout_MarkupCompile.cache
+C:\Users\诀别泪\source\repos\BasicLayout\BasicLayout\obj\Debug\BasicLayout_MarkupCompile.lref
+C:\Users\诀别泪\source\repos\BasicLayout\BasicLayout\obj\Debug\MainWindow.baml
+C:\Users\诀别泪\source\repos\BasicLayout\BasicLayout\obj\Debug\BasicLayout.g.resources
+C:\Users\诀别泪\source\repos\BasicLayout\BasicLayout\obj\Debug\BasicLayout.Properties.Resources.resources
+C:\Users\诀别泪\source\repos\BasicLayout\BasicLayout\obj\Debug\BasicLayout.csproj.GenerateResource.cache
+C:\Users\诀别泪\source\repos\BasicLayout\BasicLayout\obj\Debug\BasicLayout.csproj.CoreCompileInputs.cache
+C:\Users\诀别泪\source\repos\BasicLayout\BasicLayout\obj\Debug\BasicLayout.exe
+C:\Users\诀别泪\source\repos\BasicLayout\BasicLayout\obj\Debug\BasicLayout.pdb
